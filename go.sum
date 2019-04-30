@@ -50,6 +50,8 @@ github.com/ipipdotnet/ipdb-go v1.1.0/go.mod h1:6SFLNyXDBF6q99FQvbOZJQCc2rdPrB1V5
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/mattn/go-sqlite3 v1.10.0 h1:jbhqpg7tQe4SupckyijYiy0mJJ/pRyHvXf7JdWK860o=
 github.com/mattn/go-sqlite3 v1.10.0/go.mod h1:FPy6KqzDD04eiIsT53CuJW3U88zkxoIYsOqkbpncsNc=
+github.com/monnand/dhkx v0.0.0-20180522003156-9e5b033f1ac4 h1:UsjqpfLSsCM5SVN5OGhiWJnxDokyT74E6Ahj6kVZxh8=
+github.com/monnand/dhkx v0.0.0-20180522003156-9e5b033f1ac4/go.mod h1:/cxRiYq8L/bpGLJJJ7mN66Qv2nj915TfJdujDVyYVGA=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/rqlite/rqlite v4.4.0+incompatible h1:64sn+Dk6fCFa8mrHdMfVQi1qKbvu6qp9D/y16NItvYk=

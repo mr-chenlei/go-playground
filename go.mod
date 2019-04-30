@@ -9,6 +9,7 @@ require (
 	github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6 // indirect
 	github.com/ipipdotnet/ipdb-go v1.1.0 // indirect
 	github.com/mattn/go-sqlite3 v1.10.0
+	github.com/monnand/dhkx v0.0.0-20180522003156-9e5b033f1ac4 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/rqlite/rqlite v4.4.0+incompatible
 	github.com/therecipe/qt v0.0.0-20190121211426-e73768bc9bcc // indirect

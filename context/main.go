@@ -52,15 +52,17 @@ func printC(ctx context.Context) {
 }
 
 func main() {
-	ctxA := context.WithValue(context.Background(), "fmt", "A")
-	ctxB := context.WithValue(context.Background(), "fmt", "B")
+	ctx, _ := context.WithCancel(context.Background())
+	ctxA, cancelA := context.WithCancel(ctx)
+	ctxB, cancelB := context.WithCancel(ctx)
 
 	go printA(ctxA)
 	go printB(ctxB)
 
 	time.Sleep(5 * time.Second)
-
-	ctxA.Done()
+	cancelA()
+	time.Sleep(5 * time.Second)
+	cancelB()
 
 	select {}
 }
