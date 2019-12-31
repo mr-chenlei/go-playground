@@ -10,14 +10,14 @@ import (
 )
 
 const (
-	// AppKeyLength ....
-	AppKeyLength = 2
+	// AppKeyLengthOfUUID AppKey所包含UUID的数量
+	AppKeyLengthOfUUID = 2
 )
 
 // NewAppKey ...
 func NewAppKey() []byte {
 	var buffer bytes.Buffer
-	for i := 0; i < AppKeyLength; i++ {
+	for i := 0; i < AppKeyLengthOfUUID; i++ {
 		k := uuid.New()
 		buffer.Write(k[:])
 	}
@@ -37,12 +37,25 @@ func DecodeAppKey(key string) ([]byte, error) {
 // DigestAppKey ...
 func DigestAppKey(keyID, key []byte) []byte {
 	hash := sha512.New()
-	hash.Write(keyID)
+	digestedKeyID := hash.Sum(keyID)
+	hash.Reset()
 	hash.Write(key)
+	hash.Write(digestedKeyID)
 	return hash.Sum(nil)
 }
 
 func main() {
-	i := int64(1)
-	fmt.Println(len(i))
+	key := NewAppKey()
+	encode := EncodeAppKey(key)
+	decode, err := DecodeAppKey(encode)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	var b [64]byte
+	copy(b[:], decode[:])
+	fmt.Println("key:", encode, len(encode))
+	fmt.Println("[64]byte:", b)
+	fmt.Println("[]byte:", decode, len(decode))
 }
