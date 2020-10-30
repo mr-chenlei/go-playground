@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package analyst.core;
+
+option go_package = "github.com/MrVegeta/go-playground/analyst/core/core;core";
+
+import "google/protobuf/any.proto";
+
+// Config is the master config of Magnetar. Magnetar takes this config as input and functions accordingly.
+message Config {
+    // Features is for configurations of all features in Magnetar. A feature must implement the Feature interface, and its config type must be registered through atom.RegisterConfig.
+    repeated google.protobuf.Any features = 1;
+    repeated google.protobuf.Any task_handler = 2;
+
+}

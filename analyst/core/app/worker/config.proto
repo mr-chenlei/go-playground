@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package analyst.core.app.worker;
+
+option go_package = "github.com/MrVegeta/go-playground/analyst/core/app/worker;worker";
+
+message Config {
+  string path = 1;
+  string template = 2;
+}
