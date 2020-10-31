@@ -4,18 +4,19 @@ import "github.com/MrVegeta/go-playground/analyst/core/app/worker"
 
 // WorkerConfig ...
 type WorkerConfig struct {
-	Path     *string `yaml:"path"`
-	Template *string `yaml:"template"`
+	SDKLogPath      *string `yaml:"sdk-log-path"`
+	FileType        *string `yaml:"file-type"`
+	KeywordTemplate *string `yaml:"keyword-template"`
 }
 
 // Build ...
 func (c *WorkerConfig) Build() (*worker.Config, error) {
 	cfg := &worker.Config{}
-	if c.Path != nil {
-		cfg.Path = *c.Path
+	if c.SDKLogPath != nil {
+		cfg.SDKLogPath = *c.SDKLogPath
 	}
-	if c.Template != nil {
-		cfg.Template = *c.Template
+	if c.KeywordTemplate != nil {
+		cfg.KeywordTemplate = *c.KeywordTemplate
 	}
 	return cfg, nil
 }
