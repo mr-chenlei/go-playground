@@ -1,0 +1,9 @@
+[
+  {"match":"line processing request"},
+  {"match":"process request from"},
+  {"error":"no rule matched"},
+  {"error":"not enough information for making a decision"},
+  {"error":"dialing TCP failed"},
+  {"error":"dialing UDP failed"},
+  {"error":"Error while dialing dial tcp: lookup gravity.lstaas.com"}
+]

@@ -5,6 +5,7 @@ import (
 	"code.lstaas.com/lightspeed/atom/features"
 	"code.lstaas.com/lightspeed/atom/log/errors"
 	"code.lstaas.com/lightspeed/atom/serial"
+	"github.com/MrVegeta/go-playground/analyst/common"
 )
 
 // Instance combines all functionality in Magnetar.
@@ -44,6 +45,6 @@ func (s *Instance) Start() error {
 	if err != nil {
 		return err
 	}
-	errors.New("analyst started", "version", "").AtInfo().WriteToLog()
+	errors.NewF("analyst version: %v", common.Version()).AtInfo().WriteToLog()
 	return nil
 }
