@@ -1,5 +1,7 @@
 package main
 
+// Keyword: ELK、iKuai、爱快、日志、Galaxy client、解压
+
 import (
 	"archive/tar"
 	"bufio"
