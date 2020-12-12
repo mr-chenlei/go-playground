@@ -1,7 +1,29 @@
 package main
 
-import "fmt"
+import "log"
+
+type someStruct struct {
+	A string
+	B string
+	C string
+}
+
+func returnStruct() *someStruct {
+	s := &someStruct{
+		A: "A",
+	}
+	return s
+}
 
 func main() {
-	fmt.Println("hello x86 world!")
+	ss := &someStruct{
+		B: "B1",
+		C: "C1",
+	}
+	log.Println(ss)
+
+	ss = returnStruct()
+	ss.B = "B2"
+	ss.C = "C2"
+	log.Println(ss)
 }
