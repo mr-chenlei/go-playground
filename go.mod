@@ -2,6 +2,7 @@ module github.com/MrVegeta/go-playground
 
 require (
 	code.lstaas.com/lightspeed/atom v0.2.2
+	github.com/360EntSecGroup-Skylar/excelize/v2 v2.3.1
 	github.com/LiamHaworth/go-tproxy v0.0.0-20190726054950-ef7efd7f24ed
 	github.com/PuerkitoBio/goquery v1.5.1 // indirect
 	github.com/akamensky/argparse v1.2.2 // indirect
@@ -36,7 +37,6 @@ require (
 	github.com/tjfoc/gmsm v1.3.2 // indirect
 	github.com/xtaci/kcp-go v5.4.20+incompatible // indirect
 	github.com/xtaci/lossyconn v0.0.0-20200209145036-adba10fffc37 // indirect
-	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
 	golang.org/x/net v0.0.0-20200927032502-5d4f70055728
 	google.golang.org/protobuf v1.25.0
 	gopkg.in/yaml.v2 v2.2.8
