@@ -1,7 +1,11 @@
 module github.com/MrVegeta/go-playground
 
 require (
-	code.lstaas.com/lightspeed/atom v0.2.2
+	code.lstaas.com/lightspeed/atom v0.2.5
+	code.lstaas.com/lightspeed/galaxy v0.2.2 // indirect
+	code.lstaas.com/lightspeed/gravity v0.3.0
+	code.lstaas.com/lightspeed/radiation v0.0.0-20201023103435-678a5f9986e0 // indirect
+	github.com/360EntSecGroup-Skylar/excelize v1.4.1 // indirect
 	github.com/LiamHaworth/go-tproxy v0.0.0-20190726054950-ef7efd7f24ed
 	github.com/PuerkitoBio/goquery v1.5.1 // indirect
 	github.com/akamensky/argparse v1.2.2 // indirect
@@ -10,6 +14,7 @@ require (
 	github.com/antchfx/xmlquery v1.2.4 // indirect
 	github.com/armon/go-socks5 v0.0.0-20160902184237-e75332964ef5
 	github.com/boltdb/bolt v1.3.1 // indirect
+	github.com/go-ping/ping v0.0.0-20210216210419-25d1413fb7bb // indirect
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gocolly/colly v1.2.0 // indirect
 	github.com/golang/protobuf v1.4.2
@@ -22,7 +27,7 @@ require (
 	github.com/jbenet/go-is-domain v1.0.5
 	github.com/kennygrant/sanitize v1.2.4 // indirect
 	github.com/klauspost/reedsolomon v1.9.9 // indirect
-	github.com/mattn/go-sqlite3 v1.14.0
+	github.com/mattn/go-sqlite3 v2.0.1+incompatible
 	github.com/miekg/dns v1.1.35 // indirect
 	github.com/mmcloughlin/avo v0.0.0-20200803215136-443f81d77104 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
@@ -38,12 +43,13 @@ require (
 	github.com/xtaci/lossyconn v0.0.0-20200209145036-adba10fffc37 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
 	golang.org/x/net v0.0.0-20200927032502-5d4f70055728
+	google.golang.org/grpc v1.32.0
 	google.golang.org/protobuf v1.25.0
 	gopkg.in/yaml.v2 v2.2.8
 	v2ray.com/core v4.15.0+incompatible
 	v2ray.com/ext v4.15.0+incompatible // indirect
 )
 
-replace github.com/rs/zerolog v1.11.0 => gitlab.lstaas.com/pros/zerolog v1.11.1
+replace github.com/rs/zerolog v1.11.0 => code.lstaas.com/lightspeed/zerolog v1.11.1
 
 go 1.13
